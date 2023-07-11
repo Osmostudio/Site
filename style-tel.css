@@ -1,0 +1,262 @@
+/* corps de page */
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+/* barre latérale/navigation */
+.en-tete {
+  position: fixed;
+  overflow: visible;
+  z-index: 3;
+  width: 100%;
+  height: 13%;
+  top: 0px;
+  background-color: white;
+}
+img.logo-titre-bis {
+  position: absolute;
+  position: fixed;
+  z-index: 3;
+  width: 120px;
+  height: 26px;
+  top: 5%;
+  padding-left: 3%;
+}
+label {
+  position: fixed;
+  z-index: 3;
+  font-family: "helvetica-regular", sans-serif;
+  font-size: 50px;
+  color: #917c62; /* marron */
+  right: 10%;
+  top: 0px;
+}
+#affichage {
+  display: none;
+}
+#affichage:checked + aside {
+  display: flex;
+}
+aside {
+  position: fixed;
+  display: none;
+  z-index: 2;
+  width: 92%;
+  height: 100%;
+  padding-left: 3%;
+  background-color: rgba(255,255,255,85%);
+}
+.navigation {
+  position: absolute;
+  width: 92%;
+  height: 250px;
+  top: 20%;
+}
+img.logo-titre {
+  display: none;
+}
+img.logo-formes {
+  position: absolute;
+  width: 120px;
+  height: 17px;
+  bottom: 5%;
+}
+/* articles/contenu */
+main {
+  position: absolute;
+  width: 92%;
+  height: 100%;
+  padding-top: 25%;
+  padding-left: 3%;
+}
+/* pied de page */
+footer {
+  position: fixed;
+  width: 25px;
+  height: 100%;
+  bottom: 5%;
+  text-align: right;
+  line-height: 25px;
+  font-family: "helvetica-regular", sans-serif;
+  color: #e0d5c3;
+  font-size: 9px;
+  writing-mode: vertical-rl;
+}
+/* typo */
+h1 {
+  position: absolute;
+  color: #917c62;
+  font-family: "costa", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  margin: 0px;
+}
+h2 {
+  color: #917c62; /* marron */
+  font-family: "helvetica-regular", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+}
+h3 {
+  color: #917c62;
+  font-family: "helvetica-regular", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+}
+h4 {
+  color: #917c62;
+  font-family: "helvetica-regular", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  margin: 0px;
+}
+h5 {
+  color: #917c62;
+  font-family: "helvetica-bold", sans-serif;
+  font-size: 13px;
+  margin: 0px;
+}
+p {
+  color: #917c62;
+  font-family: "helvetica-regular", sans-serif;
+  font-size: 13px;
+  margin: 0px;
+}
+/* ancres navigation-1 */
+a.navigation-1 {
+  outline: none;
+  text-decoration: none;
+}
+a.navigation-1:link {
+  color: #917c62; /* marron */
+}
+a.navigation-1:visited {
+  color: #917c62; /* marron */
+}
+a.navigation-1:active {
+  color: #f0802d; /* orange */
+}
+/* ancres navigation-2 */
+a.navigation-2 {
+  outline: none;
+  text-decoration: none;
+}
+a.navigation-2:link {
+  color: #e0d5c3; /* marron clair */
+}
+a.navigation-2:visited {
+  color: #e0d5c3; /* marron clair */
+}
+a.navigation-2:active {
+  color: #f0802d; /* orange */
+}
+/* ancres navigation-3 */
+a.navigation-3 {
+  outline: none;
+  text-decoration: none;
+}
+a.navigation-3:link {
+  color: #f0802d; /* orange */
+}
+a.navigation-3:visited {
+  color: #f0802d; /* orange */
+}
+a.navigation-3:active {
+  color: #f0802d; /* orange */
+}
+/* index/navigation - grille des projets */
+div.boîte-projet {
+  position: absolute;
+  width: 92%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 9%;
+  grid-auto-rows: 5%;
+}
+img.boîte-projet {
+  position: absolute;
+  z-index: 1;
+  width: 40%;
+  object-fit: contain;
+}
+h3.boîte-projet {
+  position: relative;
+  width: 40%;
+  height: auto;
+  vertical-align: bottom;
+  padding-top: 120%;
+}
+.boîte-projet-survol {
+  position: absolute;
+  opacity: 0;
+  width: 40%;
+  height: auto;
+}
+/* projet - bloc textes */
+.boîte-texte {
+  display: grid;
+  width: 870px;
+  max-height: auto;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+}
+.boîte-texte-bis {
+  display: grid;
+  width: 870px;
+  max-height: auto;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 75px;
+}
+.boîte-titre {
+  grid-row: 1;
+  grid-column: 1;
+}
+.boîte-resume {
+  grid-row: 1;
+  grid-column: 2;
+  padding-left: 10%;
+  text-align: left;
+  overflow-wrap: break-word;
+  hyphens: none;
+  border-spacing: 0px;
+}
+/* projet - visuel principal */
+.image-principale {
+  position: absolute;
+  width: 870px;
+  margin-top: 75px;
+}
+.video {
+  position: absolute;
+  z-index: 1;
+  width: 870px;
+  margin-top: 75px;
+}
+/* projet - visuels gallerie */
+.galerie {
+  width: 870px;
+  display : flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  grid-auto-flow: dense;
+  padding: 2;
+  margin-top: 750px;
+  padding-bottom: 100px;
+}
+.galerie li {
+  list-style-type: none;
+  height: 220px;
+}
+.galerie li.landscape {
+  grid-column-end: 2;
+}
+.galerie li img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
