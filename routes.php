@@ -1,5 +1,5 @@
 Route::get(‘/defaultsite’, function () {
 
-return redirect(‘/’);
+return redirect(‘/index.html’);
 
 });
