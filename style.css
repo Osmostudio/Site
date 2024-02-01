@@ -252,12 +252,12 @@ h3.boîte-projet {
 .image-plan-1 {
   width: 870px;
   margin-top: 75px;
-  padding-bottom: 100px;
+  margin-bottom: 75px;
 }
 .image-plan-2 {
   width: 870px;
   margin-top: 75px;
-  padding-bottom: 100px;
+  margin-bottom: 75px;
 }
 .video {
   position: absolute;
