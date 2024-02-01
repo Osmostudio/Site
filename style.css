@@ -249,6 +249,16 @@ h3.boîte-projet {
   width: 870px;
   margin-top: 75px;
 }
+.image-plan-1 {
+  position: absolute;
+  width: 870px;
+  margin-top: 75px;
+}
+.image-plan-2 {
+  position: absolute;
+  width: 870px;
+  margin-top: 75px;
+}
 .video {
   position: absolute;
   z-index: 1;
